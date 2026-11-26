@@ -1,187 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* RESET */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px;
-    font-family: Arial, sans-serif;
-    color: #00001a;
-}
-
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
 }
 
 .logo {
     font-size: 45px;
-    font-weight: bold;
+    margin-top: 75px;
+    margin-left: 140px;
 }
 
 .links {
     display: flex;
-    gap: 30px;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 85px;
+    margin-right: 300px;
 }
 
-.links a {
-    color: #5e607a;
+.link {
     text-decoration: none;
-    transition: 0.2s;
-}
-
-.links a:hover {
-    color: #f15d51;
-}
-
-/* MAIN LAYOUT */
-body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 30px;
-    align-content: start;
-}
-
-header {
-    grid-column: 1 / -1;
-}
-
-/* HERO */
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    color: inherit;
+    font-family: poppins;
+    font-size: 12px;
 }
 
 .hero-image {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero-titule {
-    font-size: 42px;
-    line-height: 1.1;
+    margin-left: 140px;
+    font-size: 40px;
+    flex-wrap: wrap;
+    font-family: poppins;
 }
 
 .hero-description {
-    color: #5e607a;
-    line-height: 1.7;
+    font-family: poppins;
+    font-size: 12px;
+    margin-top: -160px;
+    margin-left: 430px;
+    flex-wrap: nowrap;
+    font-weight: 20px;
 }
 
 .btn {
-    width: 180px;
-    padding: 15px;
-    border: none;
-    background: #f15d51;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 2px;
-    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background: rgba(247, 27, 27, 0.699);
+    margin-left: 430px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: poppins;
 }
 
-.btn:hover {
-    background: #00001a;
-}
-
-/* SIDEBAR */
 .side-bar {
-    background: #00001a;
+    display: flex;
+    justify-content: center;
+    width: 290px;
+    margin-left: 840px;
+    flex-direction: column;
+    margin-top: -455px;
+    background-color: rgb(5, 5, 39);
     color: white;
-    padding: 25px;
+    height: 460px;
 }
 
 .principal-titule {
-    color: #e9ab53;
-    font-size: 35px;
-    margin-bottom: 25px;
+    color: rgba(235, 178, 57, 0.938);
+    font-family: poppins;
+    margin-left: 20px;
+    margin-top: -40px;
 }
 
-.side-bar .titule {
-    font-size: 18px;
-    margin-bottom: 12px;
-}
-
-.side-bar .description {
-    color: #c5c6ce;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-.side-bar hr {
-    border: none;
-    border-top: 1px solid #5e607a;
-    margin-bottom: 25px;
-}
-
-/* CARDS - ORIGINAL HTML */
-.cards {
-    grid-column: 1 / -1;
-    display: flex;
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.cards > * {
-    flex: 1;
-    min-width: 0;
-}
-
-.cards .img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.number {
-    color: #f15d51;
-    font-size: 30px;
-    margin-top: 12px;
-}
-
-.cards .titule {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.cards .description {
-    color: #5e607a;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* MOBILE */
-@media (max-width: 700px) {
-    body {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .hero-titule {
-        font-size: 32px;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
+.titule {
+    margin-left: 20px;
+    font-family: poppins-regular;
+    font-size: 15px;
+    margin-top: 50px;
 }
